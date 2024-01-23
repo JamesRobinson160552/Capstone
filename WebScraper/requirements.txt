@@ -1,0 +1,7 @@
+# Required packages to run the web scraper #
+# Assumes Python 3.12 - subject to change  #
+#       Available using 'pip intall'       #
+
+selenium
+beautifulsoup4
+datetime

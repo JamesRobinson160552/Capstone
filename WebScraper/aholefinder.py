@@ -20,14 +20,16 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 #imports-------------------------------------------------------------------------------------------
-from bs4 import BeautifulSoup #To parse HTML
-import requests #To get HTML
-from datetime import datetime #To get date for file naming
-import traceback #To debug better
 from selenium import webdriver #To run chrome
 from selenium.webdriver.common.by import By #To gather post URLs
+
+from bs4 import BeautifulSoup #To parse HTML
+from datetime import datetime #To get date for file naming
+
+import requests #To get HTML
+import traceback #To debug better
 import time #To wait
-import random #To confuse the narcs
+import random #To randomize wait times
 
 #Setup---------------------------------------------------------------------------------------------
 
@@ -62,11 +64,8 @@ def analyze_post(post_link):
             return
     except:
         print ("Issue with post: " + post_link)
+        traceback.print_exc()
 
-    #Store results in a JSON file
-    #print (title)
-    #print (body)
-    print (decision)
     WriteToFile(title, body, decision)
 
 #Write To File Function---------------------------------------------------------------------------
@@ -97,7 +96,7 @@ def GetPosts(driver, category, timeFrame):
         for div in divs:
             isAnAdd = ('user' in div.get_attribute('data-permalink'))
             if (isAnAdd):
-                print("Skipping add")
+                print("Skipping ad")
                 break
             analyze_post('https://www.reddit.com' + (div.get_attribute('data-permalink')))
         nextPageButton.click()
