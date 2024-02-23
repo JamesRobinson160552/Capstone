@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 4643-4644: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 7434-7435: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 64, in AnalyzePost
+    title = cleanText(postSoup.find('h1').text)
+AttributeError: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2070' in position 1316: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2856-2857: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 4576-4577: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\james\Downloads\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2728' in position 4267: character maps to <undefined>
