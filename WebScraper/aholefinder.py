@@ -3,7 +3,7 @@
 # Author:        James Robinson                                                                   #
 # Purpose:       Collect data from the subreddit r/AmItheAsshole to train a classifier.           #
 # Last Modified: 01/25/2024                                                                       #
-# TODO:          Set to run weekly                                                                #
+# TODO:          Make it cloud-based                                                              #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 #imports-------------------------------------------------------------------------------------------
