@@ -20,10 +20,10 @@ import random #To randomize wait times
 
 import re #To remove emojis
 
-def GetPosts(driver: webdriver, category: str, timeFrame: str) -> None:
+def GetPosts(driver: webdriver, community: str, category: str, timeFrame: str) -> None:
     """Uses Selenium Werbdriver to gather post URLs and pass them to AnalyzePost"""
-    jsonFile = OpenFile(category, timeFrame)
-    homeLink = 'https://old.reddit.com/r/AmItheAsshole/'+category+'/?sort='+category+'&t='+timeFrame
+    jsonFile = OpenFile(community, category, timeFrame)
+    homeLink = 'https://old.reddit.com/r/'+community+'/'+category+'/?sort='+category+'&t='+timeFrame
     driver.get(homeLink)
     numPosts, numPages = 0, 0
 
@@ -112,9 +112,9 @@ def WriteToFile(title: str, body: str, decision: str, filename: str) -> None:
             with open('./errors/' + filename + '.txt', 'a') as e:
                 e.write(traceback.format_exc())
 
-def OpenFile(category: str, timeFrame: str) -> str:
+def OpenFile(community: str, category: str, timeFrame: str) -> str:
     """Opens a new json file for the given category, timeframe, and today's date."""
-    filename = datetime.today().strftime('%Y-%m-%d') + '_' + category + '_' + timeFrame + '.json'
+    filename = datetime.today().strftime('%Y-%m-%d') + '_' + community + '_' + category + '_' + timeFrame + '.json'
     f = open('./data/' + filename, 'w')
     with open('./data/' + filename, 'w') as f:
         f.write("[")
@@ -122,16 +122,16 @@ def OpenFile(category: str, timeFrame: str) -> str:
 
 #Main----------------------------------------------------------------------------------------------
 driver = webdriver.Chrome()
-#GetPosts(driver, 'top', 'all')
-#GetPosts(driver, 'controversial', 'all')
+#GetPosts(driver, 'amitheasshole', 'top', 'all')
+#GetPosts(driver, 'amitheasshole', 'controversial', 'all')
 
-#GetPosts(driver, 'top', 'year')
-#GetPosts(driver, 'controversial', 'year')
+#GetPosts(driver, 'amitheasshole', 'top', 'year')
+#GetPosts(driver, 'amitheasshole', 'controversial', 'year')
 
-#GetPosts(driver, 'top', 'month')
-#GetPosts(driver, 'controversial', 'month')
+#GetPosts(driver, 'amitheasshole', 'top', 'month')
+#GetPosts(driver, 'amitheasshole', 'controversial', 'month')
 
-GetPosts(driver, 'top', 'week')
-GetPosts(driver, 'controversial', 'week')
+GetPosts(driver, 'amitheasshole', 'top', 'week')
+GetPosts(driver, 'amitheasshole', 'controversial', 'week')
 
 driver.quit()

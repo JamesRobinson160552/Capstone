@@ -1,0 +1,63 @@
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2562-2564: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 1532-1534: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2562-2564: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 1532-1534: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 550-552: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3049-3050: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 828-829: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u015f' in position 2218: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\james\Capstone\WebScraper\aholefinder.py", line 106, in WriteToFile
+    f.write("\n\t\"body\" : \"" + body + "\",")
+  File "C:\Users\james\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001faf6' in position 1679: character maps to <undefined>
