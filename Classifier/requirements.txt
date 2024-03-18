@@ -2,11 +2,10 @@
 
 numpy
 pandas
-json
 torch #As of 30/01/2024, pytorch is not available on python versions after 3.11
 torchtext
+scikit-learn
 nltk
-re
 onnx
 onnxscript
 onnxruntime

@@ -1,0 +1,101 @@
+import 'dart:async';
+import 'dart:typed_data';
+import 'dart:ui' as ui;
+
+import 'package:flutter/material.dart';
+import 'package:onnxruntime/onnxruntime.dart';
+import 'package:flutter/services.dart';
+import 'package:chaquopy/chaquopy.dart';
+
+void main() => runApp(Quandary());
+
+class Quandary extends StatefulWidget {
+  @override
+  _QuandaryState createState() => _QuandaryState();
+}
+
+class _QuandaryState extends State<Quandary> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Quandary',
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final GlobalKey<FormState> _formKey = GlobalKey();
+  String input = '';
+  void _submit() async{
+    OrtEnv.instance.init();
+    final sessionOptions = OrtSessionOptions();
+    final rawAssetFile = await rootBundle.load('assets/models/quandary.onnx');
+    final bytes = rawAssetFile.buffer.asUint8List();
+    final session = OrtSession.fromBuffer(bytes, sessionOptions);
+    final runOptions = OrtRunOptions();
+  }
+
+  void processInput() {
+    //Chaquopy.executeCode();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Quandary'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: <Widget>[
+            Form(
+              key: _formKey,
+              child: Column(
+                children: <Widget>[
+                  TextFormField(
+                    decoration: const InputDecoration(
+                      labelText:'Input',
+                    ),
+                    keyboardType: TextInputType.text,
+                    onFieldSubmitted: (value) {
+                      setState(() {
+                        input = value;
+                      });
+                    },
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter some text';
+                      }
+                    },
+                  ),
+                  const SizedBox(
+                    height: 80,
+                  ),
+                  ElevatedButton(
+                    onPressed: _submit,
+                    child: const Text('Submit'),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 80,
+            ),
+            Column(
+              children: <Widget>[
+                input.isEmpty ? const Text('Waiting for input...') : Text(input),
+              ]
+            )
+          ]
+        )
+      )
+    );
+  }
+}
