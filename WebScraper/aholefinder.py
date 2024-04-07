@@ -91,6 +91,7 @@ def cleanText(text: str) -> str:
             u"\U0001F680-\U0001F6FF"  # Transport and Map Symbols
             u"\U0001F1E0-\U0001F1FF"  # Flags (iOS)
             u"\U0001F900-\U0001F9FF"  # Supplemental Symbols and Pictographs
+            u"\u20A0-\u20CF"          # Currency Symbols
             u"\u2060"                 # Word Joiner
                             "]+", flags=re.UNICODE)
     cleanText = (emojiPattern.sub(r'', cleanText))
@@ -122,14 +123,14 @@ def OpenFile(community: str, category: str, timeFrame: str) -> str:
 
 #Main----------------------------------------------------------------------------------------------
 driver = webdriver.Chrome()
-#GetPosts(driver, 'amitheasshole', 'top', 'all')
-#GetPosts(driver, 'amitheasshole', 'controversial', 'all')
+GetPosts(driver, 'amitheasshole', 'top', 'all')
+GetPosts(driver, 'amitheasshole', 'controversial', 'all')
 
-#GetPosts(driver, 'amitheasshole', 'top', 'year')
-#GetPosts(driver, 'amitheasshole', 'controversial', 'year')
+GetPosts(driver, 'amitheasshole', 'top', 'year')
+GetPosts(driver, 'amitheasshole', 'controversial', 'year')
 
-#GetPosts(driver, 'amitheasshole', 'top', 'month')
-#GetPosts(driver, 'amitheasshole', 'controversial', 'month')
+GetPosts(driver, 'amitheasshole', 'top', 'month')
+GetPosts(driver, 'amitheasshole', 'controversial', 'month')
 
 GetPosts(driver, 'amitheasshole', 'top', 'week')
 GetPosts(driver, 'amitheasshole', 'controversial', 'week')
