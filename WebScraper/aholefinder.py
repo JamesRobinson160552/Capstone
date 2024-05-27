@@ -123,11 +123,11 @@ def OpenFile(community: str, category: str, timeFrame: str) -> str:
 
 #Main----------------------------------------------------------------------------------------------
 driver = webdriver.Chrome()
-GetPosts(driver, 'amitheasshole', 'top', 'all')
-GetPosts(driver, 'amitheasshole', 'controversial', 'all')
+#GetPosts(driver, 'amitheasshole', 'top', 'all')
+#GetPosts(driver, 'amitheasshole', 'controversial', 'all')
 
-GetPosts(driver, 'amitheasshole', 'top', 'year')
-GetPosts(driver, 'amitheasshole', 'controversial', 'year')
+#GetPosts(driver, 'amitheasshole', 'top', 'year')
+#GetPosts(driver, 'amitheasshole', 'controversial', 'year')
 
 GetPosts(driver, 'amitheasshole', 'top', 'month')
 GetPosts(driver, 'amitheasshole', 'controversial', 'month')
