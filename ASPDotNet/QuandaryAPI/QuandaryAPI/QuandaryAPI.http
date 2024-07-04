@@ -1,0 +1,6 @@
+@QuandaryAPI_HostAddress = http://localhost:5052
+
+GET {{QuandaryAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
