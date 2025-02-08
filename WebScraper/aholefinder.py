@@ -129,10 +129,10 @@ driver = webdriver.Chrome()
 #GetPosts(driver, 'amitheasshole', 'top', 'year')
 #GetPosts(driver, 'amitheasshole', 'controversial', 'year')
 
-#GetPosts(driver, 'amitheasshole', 'top', 'month')
-#GetPosts(driver, 'amitheasshole', 'controversial', 'month')
+GetPosts(driver, 'amitheasshole', 'top', 'month')
+GetPosts(driver, 'amitheasshole', 'controversial', 'month')
 
-GetPosts(driver, 'amitheasshole', 'top', 'week')
-GetPosts(driver, 'amitheasshole', 'controversial', 'week')
+#GetPosts(driver, 'amitheasshole', 'top', 'week')
+#GetPosts(driver, 'amitheasshole', 'controversial', 'week')
 
 driver.quit()

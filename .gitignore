@@ -152,3 +152,5 @@ cython_debug/
 
 #Scraped data
 *.json
+
+.fake
